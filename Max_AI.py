@@ -4,7 +4,6 @@ import time
 import webbrowser
 import pyttsx3
 import speech_recognition as sr
-import psutil
 
 # it is use your computers voice
 def defult_voice(audio):
@@ -30,9 +29,7 @@ def femail_voice(audio):
     engine.say(audio)
     engine.runAndWait()
 
-# it is a string which is used for checking battery level in percentage
-def battery():
-    psutil.sensors_battery().percent
+
 
 # wishme function use your computer's defult voice
 def wish_by_time():
