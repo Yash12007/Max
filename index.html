@@ -1,313 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="eUKZRp1aGxPqQPjaCl5xIBZPc7qDYNjE-5uz6YHghDw">
-    <link rel="icon shortcut" href="https://icons.getbootstrap.com/assets/icons/box.svg">
-    <meta name="keywords" content="Yash12007, technology, you, need, python, python3, html, flask, yash12007">
-    <title>Yash12007</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<style>
-    #loading{
-        background-color: rgb(153, 0, 255);
-        position: absolute;
-        top: 55px;
-        left: 0px;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentation</title>
+    <link rel="icon" href="https://icons.getbootstrap.com/assets/icons/box.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <style>
+    body{
+        background: black;
+        color: white;
+    }
+    .btn{
+      color: white;
+    }
+    #load{
+        background-image: linear-gradient(to right, cyan, blue, rgb(153, 0, 255));
         height: 3px;
         width: 100%;
+        position: absolute;
+        top: 55px;
+        left: 0;
     }
-    .card text-center{
-        background: black;
+    .sign{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: fit-content;
+        height: 50px;
+        background-image: linear-gradient(to right, cyan, blue);
         color: white;
+        border-width: 0;
+        border-radius: 30px;
     }
-    .card-header{
-        background:black;
-        color: white;
+    #about{
+      height: fit-content;
     }
-    .card-body{
-        background:black;
-        color: white;
+    #services{
+      height: fit-content;
     }
-    .btn-1{
-        background: black;
-        color: cyan;
-        border-radius: 0px;
-        border-color: black;
-        border-width: 0px;
+    #iframe{
+      position: fixed;
+      left: 10%;
+      width: 80%;
+      height: 75%;
+      overflow: auto;
     }
-    body{
-        background-color: black;
-    }
-    .container-fluid a b{
-      color: cyan;
-    }
-    #scrollme{
-      justify-content: center;
-      position: absolute;
-      align-items: center;
-      right: 0%;
-    }
-</style>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="" style="color: white;">
-                <i class="bi bi-box"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
-                    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
-                </svg>
-                Yash12007
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="https://yash12007.github.io/home" class="btn">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#About" class="btn">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="https://yash12007.blogspot.com/p/services.html" class="btn">Services</a>     
-                    </li>
-                    <li class="nav-item active">
-                        <a href="https://yash12007.github.io/Max/contact.html" class="btn">Contact</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="https://yash12007.blogspot.com/p/privacy-policy.html" class="btn">Privacy & Policy</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="https://yash12007.blogspot.com" class="btn">Blog</a>
-                    </li>
-                </ul>  
-            </div>
+          <a class="navbar-brand" href="">
+            <i class="bi bi-box"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+            </svg>
+            Yash12007
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://yash12007.github.io/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="https://yash12007.github.io/Max/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#privacy-policy">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
     </nav>
-  <div id="loading"></div>
-  <div id="btn">
-    <a href="Max_AI.py" class="btn btn-primary"><b>Download Max AI</b></a>
-  </div>
-  <p style="color: white;">Max AI is a python file to helps you to create an AI within few seconds,
-    If your listening... function isn't working then the (pyaudio) library is missing in your computer.
-  </p>
-  </div>
-  <div id="AU">
-    <h1 style="color: white;">Download Anything Uninstaller</h1>
-    <img src="Anything_Uninstaller.ico" alt="">
-    <p style="color: white;">Is an executable file (.exe) that helps you to uninstall any type of file or folder from your system
-        it is very easy to use if you enter the file path in the entry box then just click on Uninstall and then,
-        your file or folder will be completely uninstalled but if there you found an error in the red color then,
-        it comes through your system so, no problem to use it, also follow me on https://github.com/Yash12007,
-        Thank you.</p>
-    <table class="table table-dark table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Sr no.</th>
-          <th scope="col">Name</th>
-          <th scope="col">Size</th>
-          <th scope="col">Website</th>
-          <th scope="col">Date of published</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><a target="_blank"href="https://github.com/Yash12007/Project/blob/main/applications/Anything%20Uninstaller%20for%20windows%2010.zip">Anything Uninstaller for windows 10.zip</a></td>
-          <td>20.9 MB</td>
-          <td><a target="_blank"href="https://github.com/Yash12007/Project/tree/main/applications">https://github.com/Yash12007/Project/tree/main/applications</a></td>
-          <td>25/5/2022</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td><a target="_blank"href="https://github.com/Yash12007/Project/blob/main/applications/Anything_Uninstaller_Setup.exe">Anything_Uninstaller_Setup.exe</a></td>
-          <td>20.2 MB</td>
-          <td><a target="_blank"href="https://github.com/Yash12007/Project/tree/main/applications">https://github.com/Yash12007/Project/tree/main/applications</a></td>
-          <td>11/6/2022</td>
-        </tr>
-      </tbody>
-    </table>
-    <img src="Alice AI.png" alt="Alice AI" id="Alice-AI" width="256px" height="256px">
-    <p style="color: white;">Alice AI is an application which helps you to give you all answers of your any question by voice and also open websites such as Google, YouTube, StackOverflow, Whatsapp, Facebook, Spotify, etc.</p>
-    <table class="table table-dark table-striped">
-      <thead>
-        <tr>
-          <th scope="col">Sr no.</th>
-          <th scope="col">Name</th>
-          <th scope="col">Size</th>
-          <th scope="col">Website</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><a target="_blank"href="https://github.com/Yash12007/Alice_AI/blob/main/Alice_AI.py">Alice_AI.py</a></td>
-          <td>110 MB</td>
-          <td><a target="_blank"href="https://github.com/Yash12007/Alice_AI/blob/main/Alice_AI.py">https://github.com/Yash12007/Alice_AI/blob/main/Alice_AI.py</a></td>
-        </tr>
-      </tbody>
-    </table>
-  	<script type="text/javascript">
-		atOptions = {
-			'key' : '56b0c9cb228c81275c744995625d6148',
-			'format' : 'iframe',
-			'height' : 250,
-			'width' : 300,
-			'params' : {}
-		};
-		document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/56b0c9cb228c81275c744995625d6148/invoke.js"></scr' + 'ipt>');
-	</script>
-    <h1 style="color: white;" id="source">Source code</h1>
-    <a href="#up" class="btn btn-primary" id="scrollme"><b>Scroll up</b></a>
-    <p style="color: white;">Source codes are avalible on the links given below</p>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <div id="load"></div>
+    <div id="iframe">
+      <img src="Yash12007.png" class="img-fluid" alt="...">
+      <div id="about">
+        <h1>About us</h1>
+        <br>
+        Welcome to Yash12007, a software development company dedicated to providing high-quality software solutions to businesses and organizations of all sizes. We are passionate about software development and strive to create innovative and intuitive software that empowers our clients to achieve their goals and streamline their operations.
+        <br>
+        <br>
+        At Yash12007, we believe that every business deserves the best possible software solution. That's why we work closely with our clients to understand their unique needs and develop custom software solutions that are tailored to their specific requirements. We specialize in a wide range of software development services, including web and mobile application development, software integration, database design and management, and more.
+        <br>
+        <br>
+        Our team of experienced developers and designers is committed to delivering the best possible software solutions to our clients. We use the latest technologies and development methodologies to ensure that our software is efficient, secure, and easy to use. We are constantly researching and exploring new technologies to stay ahead of the curve and provide our clients with the most advanced software solutions.
+        <br>
+        <br>
+        At Yash12007, we understand that software development can be complex and overwhelming for many businesses. That's why we strive to make the process as smooth and straightforward as possible. We work closely with our clients to ensure that they are involved in every step of the development process and that their feedback and input are taken into account.
+        <br>
+        <br>
+        Our goal is to provide our clients with software solutions that are not only effective but also affordable. We believe that quality software should be accessible to businesses of all sizes, and we are committed to providing cost-effective solutions that deliver real value to our clients.
+        <br>
+        <br>
+        Thank you for considering Yash12007 for your software development needs. We look forward to the opportunity to work with you and help your business reach its full potential.
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="python.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Use for making applications for computers</h5>
-            <p>A cross platform language.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="HTML.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Use for building websites</h5>
-            <p>This language is easy to make websites & UI.</p>
-          </div>
-        </div>
+      <br>
+      <div id="services">
+        <h1>Welcome to Yash12007 Services!</h1>
+        <br>
+        <br>
+        We offer a range of services related to source code and applications. Our team of experienced developers are dedicated to providing high-quality solutions for your development needs.
+        <br>
+        <br>
+        <br>
+        Here are some of the services we offer:
+        <br>
+        <br>
+        Source code development: Our team can help you develop source code for your project, whether it's a small application or a large-scale software system. We use the latest tools and technologies to ensure that your source code is efficient, scalable, and maintainable.Application development: We can develop custom applications to meet your specific needs. Our team has experience developing applications for a variety of platforms, including desktop, mobile, and web.
+        <br>
+        <br>
+        Application maintenance: Once your application is developed, we can provide ongoing maintenance and support to ensure that it continues to run smoothly. We can also make updates and modifications as needed to meet changing requirements.
+        <br>
+        <br>
+        Contact us today to learn more about how we can help you with your source code and application development needs.
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div id="privacy-policy">
+        <h1>Privacy policy</h1>
+        <br>
+        Last Updated: 06-06-2023
+        <br>
+        <br>
+        Yash12007 ("Company," "we," "us," or "our") is committed to protecting the privacy and confidentiality of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect the information you provide when interacting with our website, products, or services. By accessing or using our website or services, you consent to the practices described in this Privacy Policy.
+        <br>
+        <br>
+        <h3>Information Collection</h3>
+        <br>
+        <b>1.1 Personal Information:</b>
+        <br>
+        We may collect personal information that you voluntarily provide to us when you interact with our website or services. This information may include your name, email address, phone number, postal address, and any other information you choose to provide.
+        <br>
+        <br>
+        <h3>1.2 Usage Information:</h3>
+        When you visit our website or use our services, we may automatically collect certain information about your device, browser, IP address, and the pages you access. This information is collected using cookies, web beacons, or similar tracking technologies.
+        <br>
+        <br>
+        <h4>Use of Information</h4>
+        <b>2.1 Personal Information:</b>
+        <br>
+        We may use your personal information to:
+        <br>
+        <br>
+        Provide and improve our products and services. Respond to your inquiries, requests, or feedback.
+        Process transactions and fulfill orders. Send you administrative messages, newsletters, or promotional materials.
+        <h3>2.2 Usage Information:</h3>
+        <b>We may use usage information to:</b>
+        <br>
+        <br>
+        Enhance and personalize your experience on our website. Analyze trends, track user activities, and gather demographic information. Improve our website's functionality, performance, and security. Information Sharing
+        <h3>3.1 Third-Party Service Providers:</h3>
+        We may share your information with trusted third-party service providers who assist us in operating our business, such as payment processors, customer support providers, or analytics services. These third parties are contractually obligated to maintain the confidentiality of your information.
+        <br>
+        <br>
+        <h3>3.2 Legal Requirements:</h3>
+        We may disclose your information when required by law, regulation, legal process, or governmental request. We may also disclose your information to protect our rights, property, or safety, or the rights, property, or safety of others.
+        <br>
+        <br>
+        <h3>3.3 Business Transfers:</h3>
+        In the event of a merger, acquisition, or sale of all or a portion of our assets, your information may be transferred as part of the transaction. We will notify you via email or prominent notice on our website if such a transfer occurs.
+        <br>
+        <br>
+        <h3>Data Security</h3>
+        We implement reasonable security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+        <br>
+        <br>
+        <h2>Your Choices</h2>
+        <h3>5.1 Opt-Out:</h3>
+        You may opt-out of receiving promotional communications from us by following the unsubscribe instructions provided in the email or contacting us directly.
+        <br>
+        <br>
+        <h3>5.2 Cookie Settings:</h3>
+        Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies if you prefer. However, this may prevent you from taking full advantage of our website's features.
+        <br>
+        <br>
+        <h3>Children's Privacy</h3>
+        Our website and services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child without parental consent, we will take steps to remove the information promptly.
+        <br>
+        <br>
+        <h3>Changes to this Privacy Policy</h3>
+        We reserve the right to update or modify this Privacy Policy at any time without prior notice. Any changes will be effective immediately upon posting the updated Privacy Policy on our website. We encourage you to review this Privacy Policy periodically for any updates.
+        <br>
+        <br>
+        <h3>Contact Us</h3>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your information, please contact us at:
+        <br>
+        Yash12007, <a href="https://yash12007.github.io/home" class="btn">https://yash12007.github.io/home</a>
+        <br>
+      </div>
     </div>
-      <b style="color: white;">Python</b>
-      <p style="color: white;">The most useful language to make applications for pc or laptop with easy santax, It is a very interactive language for devlopers.</p>
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Sr no.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Website</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>QR code scanner</td>
-            <td><a target="_blank"href="https://github.com/Yash12007/Project/blob/main/Python%20source%20code/QR%20code%20scanner/qr%20code%20scanner.py">https://github.com/Yash12007/Project/blob/main/Python%20source%20code/QR%20code%20scanner/qr%20code%20scanner.py</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Digital clock</td>
-            <td><a target="_blank"href="https://github.com/Yash12007/Project/tree/main/Python%20source%20code/digital%20clock">https://github.com/Yash12007/Project/tree/main/Python%20source%20code/digital%20clock</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <div></div>
-	  <script type="text/javascript">
-		atOptions = {
-			'key' : '56b0c9cb228c81275c744995625d6148',
-			'format' : 'iframe',
-			'height' : 250,
-			'width' : 300,
-			'params' : {}
-		};
-		document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/56b0c9cb228c81275c744995625d6148/invoke.js"></scr' + 'ipt>');
-	</script>
-      <b style="color: white;">HTML</b>
-      <p style="color: white;">This language is also use for making websites like this, you can also make your websites, blogs etc using this language so this is the only one language to build website.</p>
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Sr no.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Website</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>website</td>
-            <td><a target="_blank"href="https://github.com/Yash12007/Max/blob/main/index.html">https://github.com/Yash12007/Max/blob/main/index.html</a></td>
-          </tr>
-        </tbody>
-      </table>
-	  <script type="text/javascript">
-		atOptions = {
-			'key' : '56b0c9cb228c81275c744995625d6148',
-			'format' : 'iframe',
-			'height' : 250,
-			'width' : 300,
-			'params' : {}
-		};
-		document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/56b0c9cb228c81275c744995625d6148/invoke.js"></scr' + 'ipt>');
-	</script>
-      <b style="color: white;">Flask</b>
-      <p style="color: white;">This is a library to make servers by using python if you are interested to build your own webserver then this is the best library.</p>
-      <table class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Sr no.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Website</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Basic</td>
-            <td><a target="_blank"href="https://github.com/Yash12007/Project/blob/main/Flask/Basics">https://github.com/Yash12007/Project/blob/main/Flask/Basics</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Advanced</td>
-            <td><a target="_blank"href="https://github.com/Yash12007/Project/tree/main/Flask/Advanced">https://github.com/Yash12007/Project/tree/main/Flask/Advanced</a></td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-    <script type="text/javascript">
-	atOptions = {
-		'key' : '6c7b10f3c7444e05c844d46d8527edc1',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/6c7b10f3c7444e05c844d46d8527edc1/invoke.js"></scr' + 'ipt>');
-</script>
-  <div class="card text-center">
-      <div class="card-header">
-        Powered by Yash12007
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">External links</h5>
-        <a href="https://www.github.com/Yash12007" class="btn btn-1">Github</a>
-        <a href="https://www.replit.com/@Yash12007" class="btn btn-1">Replit</a>
-        <a href="https://yash12007.blogspot.com" class="btn btn-1">Blog</a>
-	<a href="https://https://www.medium.com/@Yash12007" class="btn btn-1">Medium</a>
-        <a href="https://www.youtube.com/@Yash12007" class="btn btn-1">YouTube</a>
-        <a href="https://www.fiverr.com/yash12007/create-a-flask-server-using-python-html-css-and-javascript" class="btn btn-1">Fiverr</a>
-        <a href="https://yash12007.github.io/Max/contact.html" class="btn btn-1">Contact</a>
-      </div>
-  </div>
-</body>
-<script>
-</script>
+    <button class='btn sign' id='user-info' onclick='signInWithGoogle()'>
+        <i class='bi bi-google'></i>
+        <svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='currentColor' class='bi bi-google' viewBox='0 0 16 16'>
+            <path d='M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z'/>
+        </svg>
+        Sign Up with Google
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    function signInWithGoogle() {
+        const datetime = Date();
+        fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const ipAddress = data.ip;
+            localStorage.setItem('IP', ipAddress);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+        localStorage.setItem('Signup-date', datetime);
+        const clientId = '364524252352-mueplfnejbmn0jupc9ut4j7kdsf7md8s.apps.googleusercontent.com';
+        const redirectUri = 'https://yash12007.github.io/home';
+        const googleSignInUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=token&scope=email%20profile`;
+        window.open(googleSignInUrl, '_self');
+    }
+    // Function to fetch user information from Google API
+    function getUserInfo(accessToken) {
+        const userInfoUrl = `https://www.googleapis.com/oauth2/v2/userinfo?access_token=${accessToken}`;
+        try{
+            localStorage.setItem('account', userInfoUrl);
+        } catch(e){
+            alert('Error while add account in your device');
+        }
+        fetch(userInfoUrl)
+            .then(response => response.json())
+            
+            .then(data => {
+                // Update the user-info element with user account information
+                const userInfoElement = document.getElementById('user-info');
+                userInfoElement.innerHTML = `
+                    <img src='${data.picture}' alt='Profile Picture' width='30' height='30' style='border-radius: 50%; margin-right: 5px;'>
+                    Welcome, ${data.name}
+                `;
+            })
+            .catch(error => console.error('Error fetching user information:', error));
+    }
+    // Function to handle the redirect after successful sign-in with Google
+    function handleGoogleSignIn() {
+        const urlParams = new URLSearchParams(window.location.hash.substr(1));
+        const accessToken = urlParams.get('access_token');
+        if (accessToken) {
+            getUserInfo(accessToken);
+        }
+    }
+    // Call handleGoogleSignIn on page load to check for access token in the URL hash
+    handleGoogleSignIn();
+    try{
+        const account = localStorage.getItem('account');
+        if (account == null){
+            console.log('No account founded');
+        }else{
+            fetch(account)
+            .then(response => response.json())
+            .then(data => {
+                const userInfoElement = document.getElementById('user-info');
+                userInfoElement.innerHTML = `
+                    <img src='${data.picture}' alt='Profile Picture' width='30' height='30' style='border-radius: 50%; margin-right: 5px;'>
+                    Welcome, ${data.name}
+                `;
+            })
+            .catch(error => console.error('Error fetching user information:', error));
+        }
+    } catch(error){
+        console.log(error);
+    }
+  </script>
 </html>
